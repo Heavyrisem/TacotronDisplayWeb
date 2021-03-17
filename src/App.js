@@ -32,70 +32,67 @@ export default class App extends Component {
         <div className="introduce" id="introduce">
         
           <div className="scrollarea">
-            <div className="title">타코트론 음성 합성 프로젝트</div>
-            <div className="my_name">표인수</div>
+            <div className="title">Tacotron Speech Synthesis Project</div>
+            <div className="my_name">Pyo Insu</div>
           </div>
   
           <div className="scrollarea">
-            <div className="tacoWhat up" style={{fontSize: '2rem'}}>타코트론은 <span className="H">딥러닝 기반 음성 학습 모델</span>의 대표적인 모델입니다.</div>
+            <div className="tacoWhat up" style={{fontSize: '2rem'}}>Tacotron is a  <span className="H">representative model</span> of deep learning-based speech learning models.</div>
           </div>
   
           <div className="scrollarea">
-            <div className="tacoWhat title up">딥러닝?</div>
-            <div className="tacoWhat desc">딥러닝은 사람의 뇌에 있는 뉴런들을 본따 만든 인공 신경망을 활용하여 사람의 사고방식을 컴퓨터에게 가르치는 것입니다.</div>
+            <div className="tacoWhat title up">Deep learning?</div>
+            <div className="tacoWhat desc">Deep learning is using artificial neural networks modeled after neurons in the human brain to teach computers how to think.</div>
           </div>
   
           <div className="scrollarea">
-            <div className="tacoWhat title up">음성 합성?</div><br />
-            <div className="tacoWhat desc">우리가 일상생활에서 많이 접하는 <span className="H">시리, 빅스비, 네이버의 클로바</span> 같은 기계가 내는 음성들은 대부분 음성 합성으로 이루어져 있습니다.</div>
+            <div className="tacoWhat title up">Voice synthesis?</div><br />
+            <div className="tacoWhat desc">Most of the voices that machines like <span className="H">Siri, Bixby, and Naver Clova</span>, which we encounter a lot in our daily lives, are made up of voice synthesis.</div>
           </div>
           
           <div className="scrollarea">
-            <div className="title">타코트론 딥러닝 과정</div>
+            <div className="title">Tacotron Deep Learning Process</div>
           </div>
   
           <div className="scrollarea">
-            <div className="tacoWhat title">데이터 탐색</div>
-            <div className="tacoWhat desc">이 프로젝트는 음성 합성 모델인 <span className="H">타코트론</span>을 사용해서 이재정 경기도교육감님의 목소리를 학습시키는게 목표였습니다.</div>
-            <div className="tacoWhat desc">그러려면 먼저 컴퓨터가 학습 할 수 있도록 음성 데이터를 찾아야 했습니다.</div>
-            <div className="tacoWhat desc">그래서 음성 데이터를 가장 쉽게 찾을 수 있는 유튜브에서 검색을 진행했고 2시간 가량의 음성 데이터를 얻을 수 있었습니다.</div>
+            <div className="tacoWhat title">Data navigation</div>
+            <div className="tacoWhat desc">The goal of this project was to learn the voice of Gyeonggi-do Superintendent Lee Jae-jung using the voice synthesis model <span className="H">Tacotron.</span></div>
+            <div className="tacoWhat desc">To do that, we first had to find voice data so that the computer could learn.</div>
+            <div className="tacoWhat desc">So I searched on YouTube, where I can find voice data the easiest, and I got about two hours of voice data.</div>
             <img src={Youtubeimg}></img>
           </div>
   
           <div className="scrollarea">
-            <div className="tacoWhat title up">음성 데이터 가공</div>
-            <div className="desc">음성 데이터를 구했으니 필요한 부분만 데이터를 추출해야 합니다.</div>
-            <div className="desc">음성 합성을 위해서는 1000개의 데이터가 필요했기 때문에 많은 인원들이 도움을 주었습니다.</div>
-            <div className="desc">처음에 몇번 시행착오를 겪으며 어떻게 하면 더 빠르고 정확하게 데이터 전처리가 가능할까 생각하다 번거로운 작업을<br /> 대신 해주는 간단한 프로그램도 몇가지 만들었습니다.</div>
+            <div className="tacoWhat title up">Voice data processing</div>
+            <div className="desc">Since you have obtained the voice data, you should extract the data only where necessary data.</div>
+            <div className="desc">Many people helped because they needed 1,000 pieces of data for voice synthesis.</div>
+            <div className="desc">At first, we went through a few trials and errors and thought about how to get data pre-processing faster and more accurately, so I created a few simple programs to do the hassle instead of.</div>
             <img src={Pythoncode}></img>
           </div>
   
           <div className="scrollarea">
-            <div className="title">딥러닝</div>
-            <div className="desc">데이터의 전처리가 모두 끝났으니 이제 학습을 시작할 차례입니다.</div>
-            <div className="desc">구글에서 만든 <span className="H">tensorflow</span> 라이브러리를 활용하여 학습을 진행했습니다.</div>
+            <div className="title">Deep Learning</div>
+            <div className="desc">Now that the data has been preprocessed, it's time to start learning.</div>
+            <div className="desc">We used the <span className="H">tensorflow</span> library created by Google for learning.</div>
             <img src={Running}></img>
           </div>
   
           <div className="scrollarea">
-            <div className="title">문제 발생</div>
-            <div className="desc">현재 3~4일정도 계속 학습을 시켰지만 아직 제대로된 결과물을 얻을수 없었습니다.</div>
-            <div className="desc">학습 그래프가 노랑색, 초록색으로 뚜렷하게 나와야 하지만 흐릿하게 퍼진 상태로 진행이 없었습니다.</div>
+            <div className="title">Problem Occurred</div>
+            <div className="desc">We have been learning for 3 to 4 days now, but we haven't been able to get the right results yet.</div>
+            <div className="desc">The learning graph should be clearly yellow and green, but there was no progress with blurry spread.</div>
             <img src={Failgraph}></img>
-            <div className="desc">(잘못된 그래프)</div>
+            <div className="desc">(Wrong Graph)</div>
           </div>
   
           <div className="scrollarea">
-            <div className="title">문제 분석 및 느낀점</div>
-            <div className="desc">아마도 먼저 만들었던 데이터셋에 문제가 있는거 같았습니다.</div>
-            <div className="desc">100,000번 이상 학습을 하게 되면 사람이 말하는 것처럼 결과가 나와야 정상이지만</div>
-            <div className="desc">150,000번 가량 학습을 진행했지만 제대로 결과가 나오지 않았습니다.</div>
-            <div className="desc">딥러닝에서의 데이터 양과 품질이 얼마나 중요한지 알았습니다.</div>
+            <div className="title">Problem Analysis and Feelings</div>
+            <div className="desc">Perhaps there was a problem with the dataset that I made first.</div>
+            <div className="desc">If you've learned more than 100,000 times, you'll get the results as you say.</div>
+            <div className="desc">I've studied about 150,000 times, but the results didn't come out properly.</div>
+            <div className="desc">I knew how important the amount and quality of data in deep learning is.</div>
           </div>
-  
-          <div className="scrollarea">
-            <div className="desc"><span className="H">도움 - 이다솔</span></div>
-          </div>
+          
         </div>
       </div>
   
